@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #12201f;
+    background-color: #f4f7f6;
+}
+ 
+header {
+    background-color: #0f766e;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+ 
+header h1 {
+    font-size: 2.25rem;
+}
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+ 
+section {
+    background-color: #ffffff;
+    border: 1px solid #c9d6d3;
+    border-radius: 8px;
+    padding: 24px;
+}
+ 
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #0f766e;
+}
+ 
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #c9d6d3;
+    text-align: left;
+}
+ 
+th {
+    background-color: #e6f0ee;
+}
+ 
+th:first-child {
+    width: 30%;
+}
+ 
+tr:hover td {
+    background-color: #f4f7f6;
+}
+ 
+.daftar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+ 
+ol {
+    list-style-type: decimal;
+    padding-left: 1.4rem;
+}
+ 
+ul {
+    list-style-type: square;
+    padding-left: 1.4rem;
+}
+ 
+li {
+    padding: 2px 0;
+}
+ 
+@media (max-width: 600px) {
+    .daftar {
+        grid-template-columns: 1fr;
+    }
+ 
+    header h1 {
+        font-size: 1.75rem;
+    }
+}
